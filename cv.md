@@ -17,3 +17,9 @@ Telegram: @radzivil
 * Git, GitHub
 * VS Code
 * Figma, Photoshop
+
+## Languages:
+
+* Russian - Native
+* Polish - A2
+* English - B1
