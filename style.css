@@ -11,20 +11,26 @@ a {
 .html {
   scroll-behavior: smooth;
 }
-
 .main-container {
   padding: 0 20px;
   margin: 0 auto;
 }
-
 .body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .main {
   min-height: 100vh; 
+}
+.title {
+  font-weight: 500;
+  font-size: 128px;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 24px;
 }
 /* header */
 .header {
