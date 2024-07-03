@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0;
 }
-
+a {
+  text-decoration: none;
+}
 .html {
   scroll-behavior: smooth;
 }
@@ -24,7 +26,33 @@
 .main {
   min-height: 100vh; 
 }
-
+/* header */
+.header {
+  position: fixed;
+  top: 35%;
+  width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header__links {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+.header__nav-link {
+  font-size: 18px;
+  color: #000000;
+}
+/* footer */
 .footer {
   position: fixed;
   left: 0;
