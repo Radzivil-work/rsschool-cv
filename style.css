@@ -62,6 +62,26 @@ a {
   font-size: 18px;
   color: #000000;
 }
+.pagination {
+  /* position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pagination div {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.pagination div.active {
+  background: #333;
+}
 /* promo */
 .promo {
   height: 100vh;

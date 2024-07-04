@@ -11,11 +11,14 @@
     <header class="header">
       <div class="main-container">
         <div class="header__wrapper">
-          <a href="" class="header__links">Works</a>
+          <div class="pagination" id="pagination"></div>
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav__item">
-                <a href="#aboutgit " class="header__nav-link">About</a>
+                <a href="#main" class="header__nav-link">Main</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="#about" class="header__nav-link">About</a>
               </li>
               <li class="header__nav__item">
                 <a href="" class="header__nav-link">Contacts</a>
@@ -24,10 +27,10 @@
                 <a href="" class="header__nav-link">Skills</a>
               </li>
               <li class="header__nav__item">
-                <a href="" class="header__nav-link">Code</a>
+                <a href="#code" class="header__nav-link">Code</a>
               </li>
               <li class="header__nav__item">
-                <a href="" class="header__nav-link">Languages</a>
+                <a href="" class="header__nav-link">Works</a>
               </li>
             </ul>
           </nav>
@@ -35,11 +38,11 @@
       </div>
     </header>
     <main class="main">
-      <section class="promo">
+      <section class="promo fullpage" id="main">
         <h1 class="title">Uladzislau Radzivil</h1>
         <h2 class="subtitle">(Frontend Developer)</h2>
       </section>
-      <section class="about" id="about">
+      <section class="about fullpage" id="about">
         <div class="main-container">
           <h2 class="title">About</h2>
           <div class="container">
@@ -52,7 +55,7 @@
           </div>
         </div>
       </section>
-      <section class="code">
+      <section class="code fullpage" id="code">
         <h2 class="title">Code</h2>
         <div class="container">
           <p class="code__text">
@@ -84,5 +87,6 @@
       </div>
     </footer>
   </div>
+  <script src="./main.js"></script>
 </body>
 </html>
