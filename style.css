@@ -15,6 +15,10 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
 .body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -48,6 +52,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: flex-end;
 }
 .header__links {
   font-size: 24px;
@@ -58,6 +63,101 @@ a {
   font-size: 18px;
   color: #000000;
 }
+.pagination {
+  /* position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.pagination div {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.pagination div.active {
+  background: #333;
+}
+/* promo */
+.promo {
+  height: 100vh;
+}
+/* about */
+.about {
+  height: 100vh;
+}
+.about__text {
+  margin-top: 160px;
+  max-width: 930px;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* code */
+.code {
+  height: 100vh;
+}
+.code__text {
+  margin-top: 100px;
+  max-width: 930px;
+  font-size: 20px;
+}
+.code__example {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.code__example_red {
+  color: #E44B4B;
+}
+.code__example_purple {
+  color: #A259FF;
+}
+/* education */
+.education {
+  height: 100vh;
+}
+.education__university {
+  margin-top: 100px;
+}
+.education__university-title,
+.education__languages-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+.education__university-inner {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.education__university-specialty {
+  font-size: 20px;
+  font-weight: 500;
+}
+.education__university-year {
+  font-size: 16px;
+  font-weight: 500;
+  color:#333;
+}
+.education__languages {
+  margin-top: 40px;
+}
+.education__languages-list {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.education__languages-item {
+  font-weight: 500;
+  font-size: 20px;
+  
+}
 /* footer */
 .footer {
   position: fixed;
@@ -65,6 +165,7 @@ a {
   right: 0;
   bottom: 0;
   padding: 20px 0;
+  z-index: -10;
 }
 .footer__wrapper {
   display: flex;
