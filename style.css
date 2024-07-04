@@ -15,6 +15,10 @@ a {
   padding: 0 20px;
   margin: 0 auto;
 }
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
 .body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -57,6 +61,20 @@ a {
 .header__nav-link {
   font-size: 18px;
   color: #000000;
+}
+/* promo */
+.promo {
+  height: 100vh;
+}
+/* about */
+.about {
+  height: 100vh;
+}
+.about__text {
+  margin-top: 160px;
+  max-width: 930px;
+  font-size: 20px;
+  font-weight: 500;
 }
 /* footer */
 .footer {
