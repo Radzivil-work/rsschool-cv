@@ -15,7 +15,7 @@
           <nav class="header__nav">
             <ul class="header__nav-list">
               <li class="header__nav__item">
-                <a href="" class="header__nav-link">About</a>
+                <a href="#aboutgit " class="header__nav-link">About</a>
               </li>
               <li class="header__nav__item">
                 <a href="" class="header__nav-link">Contacts</a>
@@ -39,16 +39,36 @@
         <h1 class="title">Uladzislau Radzivil</h1>
         <h2 class="subtitle">(Frontend Developer)</h2>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="main-container">
           <h2 class="title">About</h2>
           <div class="container">
             <p class="about__text">
               Hello! I’m Uladzislau, a passionate Frontend Developer specializing in building dynamic, responsive, and user-friendly web applications. With a keen eye for design and a deep understanding of the latest web technologies, I create seamless online experiences that engage and delight users.
               <br>
+              <br>
               I believe in the power of clean, maintainable code. My development process focuses on writing reusable components, optimizing performance, and ensuring cross-browser compatibility. I prioritize accessibility and SEO best practices to make sure that my projects are not only beautiful but also easy to find and use for everyone.
             </p>
           </div>
+        </div>
+      </section>
+      <section class="code">
+        <h2 class="title">Code</h2>
+        <div class="container">
+          <p class="code__text">
+            You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles per gallon. There are 2 gallons left.
+            Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+            Function should return true if it is possible and false if not.
+            
+          </p>
+          <pre class="code__example">
+  <span class="code__example_red">const</span> <span class="code__example_purple">zeroFuel</span> = (distanceToPump, mpg, fuelLeft) => {
+    <span class="code__example_red">if</span>(mpg * fuelLeft >= distanceToPump) {
+      <span class="code__example_red">return</span> true;
+    }
+    <span class="code__example_red">return</span> false;
+  };
+          </pre>
         </div>
       </section>
     </main>

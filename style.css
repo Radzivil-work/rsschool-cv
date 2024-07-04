@@ -76,6 +76,25 @@ a {
   font-size: 20px;
   font-weight: 500;
 }
+/* code */
+.code {
+  height: 100vh;
+}
+.code__text {
+  margin-top: 100px;
+  max-width: 930px;
+  font-size: 20px;
+}
+.code__example {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.code__example_red {
+  color: #E44B4B;
+}
+.code__example_purple {
+  color: #A259FF;
+}
 /* footer */
 .footer {
   position: fixed;
