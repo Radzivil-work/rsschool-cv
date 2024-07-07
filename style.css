@@ -217,6 +217,18 @@ a {
   z-index: 10;
   pointer-events: auto;
 }
+/* skills */
+.skills__list {
+  margin-top: 160px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.skills-text {
+  font-size: 20px;
+  font-weight: 500;
+}
 /* contacts */
 .contacts__list {
   position: absolute;
