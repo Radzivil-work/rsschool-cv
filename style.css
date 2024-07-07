@@ -74,6 +74,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  z-index: 10;
 }
 .pagination div {
   width: 20px;
@@ -215,6 +216,25 @@ a {
   position: relative;
   z-index: 10;
   pointer-events: auto;
+}
+/* contacts */
+.contacts__list {
+  position: absolute;
+  margin-top: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 100;
+  width: 600px;
+}
+.contacts__list-item {
+  font-size: 20px;
+  font-weight: 500;
+}
+ul.contacts__list .contacts__item-link {
+  color: #000;
+  cursor: pointer !important;
 }
 /* footer */
 .footer {
