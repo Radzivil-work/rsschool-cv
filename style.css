@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.html {
+  scroll-behavior: smooth;
+}
+.main-container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+.body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.main {
+  min-height: 100vh; 
+}
+.title {
+  font-weight: 500;
+  font-size: 128px;
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 24px;
+}
+.fullpage {
+  height: 100vh;
+}
+/* header */
+.header {
+  position: fixed;
+  top: 35%;
+  width: 100%;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+.header__links {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+.header__nav-link {
+  font-size: 18px;
+  color: #000000;
+}
+.pagination {
+  /* position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%); */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+.pagination div {
+  width: 20px;
+  height: 20px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.pagination div.active {
+  background: #333;
+}
+/* promo */
+.promo {
+  height: 100vh;
+}
+/* about */
+.about {
+  height: 100vh;
+}
+.about__text {
+  margin-top: 160px;
+  max-width: 930px;
+  font-size: 20px;
+  font-weight: 500;
+}
+/* code */
+.code {
+  height: 100vh;
+}
+.code__text {
+  margin-top: 100px;
+  max-width: 930px;
+  font-size: 20px;
+}
+.code__example {
+  margin-top: 40px;
+  font-size: 20px;
+}
+.code__example_red {
+  color: #E44B4B;
+}
+.code__example_purple {
+  color: #A259FF;
+}
+/* education */
+.education {
+  height: 100vh;
+}
+.education__university {
+  margin-top: 100px;
+}
+.education__university-title,
+.education__languages-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+.education__university-inner {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.education__university-specialty {
+  font-size: 20px;
+  font-weight: 500;
+}
+.education__university-year {
+  font-size: 16px;
+  font-weight: 500;
+  color:#333;
+}
+.education__languages {
+  margin-top: 40px;
+}
+.education__languages-list {
+  margin-top: 24px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.education__languages-item {
+  font-weight: 500;
+  font-size: 20px;
+  
+}
+/* works */
+.works__wrapper {
+  margin-top: 100px;
+}
+
+.works__item {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.accordion {
+  border-radius: 5px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+.accordion-content p {
+  margin: 0;
+  padding: 20px 0;
+}
+.works__item-img {
+  width: 450px;
+  object-fit: cover;
+}
+.works__item-wrapper {
+  display: flex;
+  gap: 40px;
+}
+.works__item-links {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+}
+.works__link {
+  color: #000;
+  cursor: pointer;
+}
+.accordion-content .works__link {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}
+/* skills */
+.skills__list {
+  margin-top: 160px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.skills-text {
+  font-size: 20px;
+  font-weight: 500;
+}
+/* contacts */
+.contacts__list {
+  position: absolute;
+  margin-top: 100px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 100;
+  width: 600px;
+}
+.contacts__list-item {
+  font-size: 20px;
+  font-weight: 500;
+}
+ul.contacts__list .contacts__item-link {
+  color: #000;
+  cursor: pointer !important;
+}
+/* footer */
+.footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
+  z-index: 10;
+}
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__copyright {
+  font-weight: 500;
+  font-size: 14px;
+}
+.footer__link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
